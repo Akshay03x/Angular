@@ -1,0 +1,16 @@
+<!-- <div *ngFor="let x of faculties">
+    <h1 *ngIf="Split(x.FacultyExperience) >10 " >{{x.FacultyName}}</h1>
+</div> -->
+
+<div class="row ">
+    <div *ngFor="let x of Find(faculties)"  class=" col-md-3 "  >
+        <div  class="card" >
+            <img [src]="x.FacultyImage" class="card-img-top" alt="...">
+            <h5 class="card-title">{{x.FacultyExperience}}</h5>
+            <h5 class="card-title">{{x.FacultyWorkingSince }}</h5>
+            <p class="card-text">{{x.FacultyEducationQualification}}</p>
+            <a routerLink="/aboutdetail/x.id" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+

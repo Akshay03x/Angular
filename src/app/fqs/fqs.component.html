@@ -1,0 +1,20 @@
+<input type="text" [(ngModel)]="name" placeholder="Write Here"/>
+<h4>{{name | lowercase }}</h4>
+<h4>{{name | uppercase }}</h4>
+<h4>{{name | titlecase }}</h4>
+<h4>{{name | slice:2 }}</h4>
+<h4>{{name | slice:2:6 }}</h4>
+<h4>{{number | number:'1.2-3'}}</h4>
+<h4>{{number | percent}}</h4>
+<h4>{{number | currency}}</h4>
+<h4>{{number | currency:'INR'}}</h4>
+<h4>{{object | json}}</h4>
+<h4>{{myDate| date}}</h4>
+<h4>{{myDate| date:'short'}}</h4>
+<h4>{{myDate| date:'shortDate'}}</h4>
+<h4>{{myDate| date:'shortTime'}}</h4>
+<h4>{{myDate| date:'medium'}}</h4>
+<h4>{{myDate| date:'long'}}</h4>
+<h4>{{myDate| date:'d/m/y'}}</h4>
+<img [src]="imagePath" alt="">
+<button (click)="Change()"> change</button>

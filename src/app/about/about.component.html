@@ -1,0 +1,19 @@
+<!-- <h1 *ngIf="percent >= 0.5"> pass{{percent | percent}}</h1> 
+<h1 *ngIf="percent < 0.5"> fail{{percent | percent}}</h1>
+<input type="text" [(ngModel)]="percent" placeholder="Here">
+<h1 *ngFor= "let x of Array">{{x}}</h1>
+<h1 *ngFor= "let x of Array2">{{x.name}}</h1>
+<h1 *ngFor= "let x of Array2">{{x.a}}</h1> -->
+
+<div class="row ">
+        <div *ngFor="let x of Array3 "  class=" col-md-3 "  >
+            <div *ngIf="x.ProductPrice"  class="card">
+                <img [src]="x.ProductImage" class="card-img-top" alt="...">
+                <h5 class="card-title">{{x.ProductName}}</h5>
+                <h5 class="card-title">{{x.ProductPrice | currency:"INR"}}</h5>
+                <p class="card-text">{{x.ProductDescription}}</p>
+                <a routerLink="/aboutdetail/x.id" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+</div>
+
